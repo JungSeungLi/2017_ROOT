@@ -1,0 +1,94 @@
+.layoutgood
+{
+    overflow: auto;
+    height: auto;
+    width: auto;
+    
+}
+
+
+.boardview
+{
+  border: 2px solid #BDBDBD;
+  border-radius: 20px;
+  height: 500px;
+  overflow: auto;
+  width: 613px;
+  margin: 20px;
+}
+
+.boardview .boardbottom
+{
+  border-bottom: 2px solid #BDBDBD;
+  text-align: center;
+  padding: 10px;
+}
+
+.boardview .writeview
+{
+  overflow: auto;
+  border-bottom: 2px solid #BDBDBD;
+  text-align: center;
+}
+
+.boardview .writeview .write
+{
+  float: left;
+  width: 150px;
+  border-right: 2px solid #BDBDBD;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #D5D5D5;
+
+}
+.boardview .writeview .writename
+{
+  float: left;
+  border-right: 2px solid #BDBDBD;
+  padding-left: 15px;
+  padding-right: 15px;
+ 
+}
+
+.boardview .writeview .writename1
+{
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+.boardview .content
+{
+  height: 300px;
+  margin: 30px;
+}
+
+
+.boardview .inputtitle
+{
+  border-top: 2px solid #BDBDBD;
+  border-radius: 5px;
+  width: 500px;
+  margin: 10px;
+}
+
+
+
+.boardview .substring
+{
+    border-top: 2px solid #BDBDBD;
+}
+
+
+.tag
+{
+  border: 1px solid #BDBDBD;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #EAEAEA;
+}
+
+a:link { color: black; text-decoration: none;}
+a:visited { color: black; text-decoration: none;}
+a:hover { color: black; text-decoration: underline;}

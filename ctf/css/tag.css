@@ -1,0 +1,65 @@
+@font-face { /* for IE eot 파일만 지원 */
+   font-family: bodyShop_IE;
+   src: url('../../Road_Rage.otf');
+ }
+
+.answer
+{
+    width: 600px;
+    height: 58px;
+    border-radius: 10px;
+    background: transparent;
+    border: 2px solid white;
+    padding: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color:white;
+}
+
+
+ .menu a{cursor:pointer;}
+ .menu .hide{display:none;}
+
+
+.ctf
+{
+    font-family: bodyShop_IE;
+    font-size: 8em;
+    font-family:url(../../Road_Rage.otf);
+}
+
+
+table
+{
+    width: 600px;
+    height: 58px;
+    border-radius: 10px;
+    background: transparent;
+    border: 2px solid white;
+    text-align: center;
+    margin-bottom: 50px;
+    color:white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family:'Malgun Gothic';
+}
+
+.thd
+{
+    padding:4px;
+    font-size: 27px;
+    text-align: center;
+}
+
+thead
+{
+    border-bottom: 1px solid white;
+}
+
+.imroot
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
