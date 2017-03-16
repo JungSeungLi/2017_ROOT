@@ -63,7 +63,7 @@
                     </li>
                     
                     <li class="page-scroll">
-                        <a href="#about">Application</a>
+                        <a href="#about">Download</a>
                     </li>
                     
                     <li class="page-scroll">
@@ -82,8 +82,87 @@
 </a>
                     </li>
                     
+                    <?php
+                        }
+                    ?>
                     
-                    <?php } ?>
+                     <?php
+                                        
+                        if(isset($_SESSION['name']))
+                        {?>
+                    <li class="page-scroll">
+                        <a 
+                           
+                        <?php 
+                             $date = date("Y-m-d");
+                            
+
+                        if($date=="2017-03-21")
+                       {
+                       ?>
+                        href="ctf/ctf.php"
+                       <?php
+                       }
+                       else
+                       {
+                       ?>
+                       href="javascript:alert('
+CTF 기간이 아닙니다')"
+                       <?php
+                       }
+                       ?>
+                           >CTF
+                        </a>
+                    </li>
+                    
+                    <?php
+                        }
+                    ?>
+                    
+                    
+                    
+                     <?php
+                        }
+                    ?>
+                    
+                     <?php
+                                        
+                        if(isset($_SESSION['name']))
+                        {?>
+                    <li class="page-scroll">
+                        <a 
+                           
+                        <?php 
+                             $date = date("Y-m-d");
+                            
+
+                        if($date=="2017-03-22")
+                       {
+                       ?>
+                        href="ctf/ctf.php"
+                       <?php
+                       }
+                       else
+                       {
+                       ?>
+                       href="javascript:alert('
+CTF 기간이 아닙니다')"
+                       <?php
+                       }
+                       ?>
+                           >CTF
+                        </a>
+                    </li>
+                    
+                    <?php
+                        }
+                    ?>
+                    
+                    
+                    
+                    
+                    
+                    
                     <?php 
                         if(isset($_SESSION['name']))
                         {
@@ -335,7 +414,7 @@ Please login')"
             <div class="container">
                 <div class="row">
                     <div class="footer-col col-md-4">
-                        <h3>Location</h3>
+                        <h3>Dying Message</h3>
                         <p>كنت أشاهد لك. لا يكون في الطريق الخطأ.<br>As it giet om dizze klup folle en sliep. Kill my</p>
                     </div>
                     <div class="footer-col col-md-4">
@@ -359,7 +438,7 @@ Please login')"
                         </ul>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>About Freelancer</h3>
+                        <h3>About Site</h3>
                         <p>본 사이트를 공격할시 정보통신망 이용촉진 및 정보보호 등에 관한 법률에 의거하여 민형사상 처벌을 받을 수 있습니다.</p>
                     </div>
                 </div>

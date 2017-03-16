@@ -21,21 +21,35 @@
         }
         else
         {
-            $sql = "select * from succ where email=:email";
-            $DB_q = $pdo->prepare($sql);
-            $DB_q -> bindValue(":email",$_SESSION['email']);
-            $DB_q -> execute();
-            $result = $DB_q -> fetch();
-            $check = $result ? true : false;
-            
-            if(!$check)
+            $date = date("Y-m-d");
+                            
+            if($date=="2017-03-21")
+            {
+                $sql = "select * from succ where email=:email";
+                $DB_q = $pdo->prepare($sql);
+                $DB_q -> bindValue(":email",$_SESSION['email']);
+                $DB_q -> execute();
+                $result = $DB_q -> fetch();
+                $check = $result ? true : false;
+
+                if(!$check)
+                {
+                     echo "<script>
+                            alert('1차 합격자가 아닙니다.');
+                            history.go(-1);
+                    </script>";
+
+                    exit;
+                }
+            }
+            else
             {
                  echo "<script>
-                        alert('1차 합격자가 아닙니다.');
-                        history.go(-1);
-                </script>";
-            
-            exit;
+                            alert('CTF 기간이 아닙니다');
+                            history.go(-1);
+                    </script>";
+
+                    exit;
             }
         }
     
@@ -104,12 +118,15 @@
       </table>
       
       
-     <div>
+      
+      
+     <div class="que_list">
         <ul>
              <li class="menu">
                  
+                 <div class="question_title">Question Point</div>
                  
-                <a><img src="" alt="Crypto"/></a>
+                <a><img src="" alt="Crypto" class="mgin"/></a>
                 <ul class="hide">
                     <?php
                     foreach($result2 as $row2)
@@ -130,8 +147,8 @@
                   }
             ?>
                 </ul>
-         
-         <a><img src="" alt="Forensic"/></a>
+         <br>
+         <a><img src="" alt="Forensic" class="mgin"/></a>
                 <ul class="hide">
                     <?php
                     foreach($result2 as $row2)
@@ -139,7 +156,7 @@
                  ?>
                     <li>
                         <?php
-                    if($row2['category'] == "Crypto")
+                    if($row2['category'] == "Forensic")
                     {
                     ?>
                          <li><?php echo $row2['que_name']; ?>  [ <?php echo $row2['score']; ?> ]
@@ -152,7 +169,123 @@
                   }
             ?>
                 </ul>
-         
+         <br>
+      
+              <a><img src="" alt="MISC" class="mgin"/></a>
+                <ul class="hide">
+                    <?php
+                    foreach($result2 as $row2)
+                    {
+                 ?>
+                    <li>
+                        <?php
+                    if($row2['category'] == "MISC")
+                    {
+                    ?>
+                         <li><?php echo $row2['que_name']; ?>  [ <?php echo $row2['score']; ?> ]
+                        </li>
+                    <?php
+                    }
+                    ?>
+                    </li>
+                 <?php
+                  }
+            ?>
+                </ul>
+    
+    <br>
+                  <a><img src="" alt="Programming" class="mgin"/></a>
+                <ul class="hide">
+                    <?php
+                    foreach($result2 as $row2)
+                    {
+                 ?>
+                    <li>
+                        <?php
+                    if($row2['category'] == "Programming")
+                    {
+                    ?>
+                         <li><?php echo $row2['que_name']; ?>  [ <?php echo $row2['score']; ?> ]
+                        </li>
+                    <?php
+                    }
+                    ?>
+                    </li>
+                 <?php
+                  }
+            ?>
+                </ul>
+    <br>
+    <a><img src="" alt="Pwnable" class="mgin"/></a>
+                <ul class="hide">
+                    <?php
+                    foreach($result2 as $row2)
+                    {
+                 ?>
+                    <li>
+                        <?php
+                    if($row2['category'] == "Pwnable")
+                    {
+                    ?>
+                         <li><?php echo $row2['que_name']; ?>  [ <?php echo $row2['score']; ?> ]
+                        </li>
+                    <?php
+                    }
+                    ?>
+                    </li>
+                 <?php
+                  }
+            ?>
+                </ul>
+
+<br>
+
+  <a><img src="" alt="Reversing" class="mgin"/></a>
+                <ul class="hide">
+                    <?php
+                    foreach($result2 as $row2)
+                    {
+                 ?>
+                    <li>
+                        <?php
+                    if($row2['category'] == "Reversing")
+                    {
+                    ?>
+                         <li><?php echo $row2['que_name']; ?>  [ <?php echo $row2['score']; ?> ]
+                        </li>
+                    <?php
+                    }
+                    ?>
+                    </li>
+                 <?php
+                  }
+            ?>
+                </ul>
+    
+<br>
+<a><img src="" alt="Web" class="mgin"/></a>
+                <ul class="hide">
+                    <?php
+                    foreach($result2 as $row2)
+                    {
+                 ?>
+                    <li>
+                        <?php
+                    if($row2['category'] == "Web")
+                    {
+                    ?>
+                         <li><?php echo $row2['que_name']; ?>  [ <?php echo $row2['score']; ?> ]
+                        </li>
+                    <?php
+                    }
+                    ?>
+                    </li>
+                 <?php
+                  }
+            ?>
+                </ul>
+    
+    
          
                 
          

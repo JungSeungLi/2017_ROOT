@@ -18,6 +18,7 @@
        $_SESSION['email'] = $email;
        $_SESSION['name'] = $result['name'];
        $_SESSION['student_number'] = $result['student_number'];
+       $_SESSION['check'] = "default";
     }
     else
     {

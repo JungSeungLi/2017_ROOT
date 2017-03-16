@@ -1,0 +1,57 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background:  url(img.jpg) center center fixed no-repeat;
+}
+
+@font-face { /* for IE eot 파일만 지원 */
+   font-family: bodyShop_IE;
+   src: url('../../Road_Rage.otf');
+ }
+
+.good
+{
+    margin-top: 60px;
+    overflow: auto;
+}
+
+.haha
+{
+    font-family: bodyShop_IE;
+    font-size: 4em;
+    font-family:url(../../Road_Rage.otf);
+    color: white;
+}
+
+video
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+
+form
+{
+    margin-top: 176px;
+}
+
+.answer
+{
+    width: 600px;
+    height: 58px;
+    border-radius: 10px;
+    background: transparent;
+    border: 2px solid white;
+    padding: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color:white;
+    text-align: center;
+}

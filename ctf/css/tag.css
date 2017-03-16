@@ -63,3 +63,21 @@ thead
 }
 
 
+
+
+
+.question_title {
+    margin: 30px;
+    font-size: 30px;
+}
+
+.mgin {
+    padding: 15px;
+}
+
+.que_list {
+    overflow: auto;
+    border: 2px solid white;
+    width: 600px;
+    border-radius: 10px;
+}
