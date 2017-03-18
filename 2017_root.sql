@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- 생성 시간: 17-03-16 15:31
--- 서버 버전: 10.1.16-MariaDB
--- PHP 버전: 5.6.24
+-- 생성 시간: 17-03-20 12:43
+-- 서버 버전: 10.1.19-MariaDB
+-- PHP 버전: 5.6.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -91,14 +91,6 @@ CREATE TABLE `question` (
   `answer` text NOT NULL,
   `score` int(11) NOT NULL DEFAULT '300'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- 테이블의 덤프 데이터 `question`
---
-
-INSERT INTO `question` (`que_name`, `category`, `answer`, `score`) VALUES
-('What_is_it', 'Crypto', 'MD5_d3crypt', 240),
-('베이비64', 'Crypto', 'This is Flag @_@', 240);
 
 -- --------------------------------------------------------
 

@@ -94,10 +94,9 @@
                         <a 
                            
                         <?php 
-                             $date = date("Y-m-d");
-                            
-
-                        if($date=="2017-03-21")
+                             $date1 = date("Ymd");
+    
+                        if(!(strcmp($date1 , "20170321")))
                        {
                        ?>
                         href="ctf/ctf.php"
@@ -117,46 +116,51 @@ CTF 기간이 아닙니다')"
                     
                     <?php
                         }
-                    ?>
-                    
-                    
-                    
-                     <?php
-                        }
-                    ?>
-                    
-                     <?php
-                                        
+                          
                         if(isset($_SESSION['name']))
                         {?>
                     <li class="page-scroll">
                         <a 
                            
                         <?php 
-                             $date = date("Y-m-d");
-                            
-
-                        if($date=="2017-03-22")
+                             $date2 = date("Ymd");
+    
+                        if(!(strcmp($date2 , "20170320")))
                        {
                        ?>
-                        href="ctf/ctf.php"
+                        href="Announcement/succ.php"
                        <?php
                        }
                        else
                        {
                        ?>
                        href="javascript:alert('
-CTF 기간이 아닙니다')"
+아직 확인하실수 없습니다.')"
                        <?php
                        }
                        ?>
-                           >CTF
+                           >1ST_CHECK
                         </a>
                     </li>
                     
                     <?php
                         }
                     ?>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+
                     
                     
                     
@@ -448,7 +452,7 @@ Please login')"
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; Your Website 2016
+                        Copyright &copy; SDHS ROOT 2017
                     </div>
                 </div>
             </div>
@@ -485,18 +489,7 @@ Please login')"
                             <p>Web Service의 전반적인 구성요소와 동작방법에 대해 학습하고<br> 연관된 타 서비스의 취약점 분석 혹은 침투테스트를 하는 분야이다.<br>
                             <strong>트랙 대표 : 김종현</strong></p>
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
+                               
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
@@ -522,18 +515,7 @@ Please login')"
                             <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
                             <p>컴퓨터 공학 지식을 기반으로 범죄에 사용되거나 현장에 있는 디지털 기기에서<br> 범죄자 혹은 범죄에 대한 단서 혹은 증거를 수집하는 기술을 공부하는 분야이다.<br><strong>트랙 대표 : 한지혁</strong></p>
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
+                               
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
@@ -560,18 +542,7 @@ Please login')"
                             <p>소프트웨어 시스템의 구성요소를 알아 내고, 구성요소들 간의 관계를<br> 식별하며, 대상(object) 시스템을 분석하는 기술을 공부하는 분야이다.<br><strong>트랙 대표 : 오경제</strong>
 </p>
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
+                              
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
